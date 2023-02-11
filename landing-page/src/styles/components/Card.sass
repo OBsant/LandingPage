@@ -1,0 +1,23 @@
+.card
+    @include display
+    flex-direction: column
+    width: 14rem
+    height: 11rem
+    text-align: center
+    padding: .5rem
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3)
+
+    @include desktop-low
+        width: 12rem
+        height: 9rem
+
+        h2
+            font-size: 18px
+
+    h1
+        font-size: 55px
+        margin-bottom: -1rem
+        color: $color-itens
+
+        @include desktop-low
+            font-size: 45px

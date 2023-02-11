@@ -1,0 +1,32 @@
+@mixin display
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+@mixin desktop-low
+    @media (max-width: 1710px)
+        @content
+
+@mixin low-resolution
+    @media (max-width: 1230px)
+        @content
+
+@mixin tablet
+    @media (max-width: 1057px)
+        @content
+
+@mixin gap-text
+    @media (max-width: 749px)
+        @content
+
+@mixin mobile
+    @media (max-width: 594px)
+        @content
+
+@mixin mobile-small
+    @media (max-width: 500px)
+        @content
+
+@mixin mobile-ultra-small
+    @media (max-width: 389px)
+        @content

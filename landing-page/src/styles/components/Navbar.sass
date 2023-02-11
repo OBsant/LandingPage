@@ -1,0 +1,24 @@
+.navbar
+    @include display
+    padding: .7rem 10rem .7rem 10rem
+    background-color: #051923
+    color: white
+
+    @include tablet
+        flex-direction: column
+        padding: .7rem 5rem .7rem 5rem
+
+    &-itens
+        @include display
+        gap: 2rem
+
+        @include mobile-small
+            display: none
+
+        a
+            text-decoration: none
+            color: white
+            font-size: 1.1rem
+
+            &:hover
+                color: #d4d4d4

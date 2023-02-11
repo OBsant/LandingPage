@@ -1,0 +1,50 @@
+.card-reviews
+    height: 23rem
+    width: 28rem
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 1rem
+    padding: 2rem
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3)
+
+    @include desktop-low
+        height: 18rem
+        width: 18rem
+
+    @include mobile-ultra-small
+        height: 15rem
+        width: 15rem
+
+    p
+        font-size: 15px
+        @include desktop-low
+            font-size: 13px
+
+        @include mobile-ultra-small
+            font-size: 10px
+
+    h2
+        @include mobile-ultra-small
+            font-size: 18px
+
+    .stars
+        color: rgb(233, 221, 50)
+        font-size: 1.3rem
+        @include desktop-low
+            font-size: 1rem
+
+    img
+        height: 7rem
+        width: 7rem
+        object-fit: cover
+        border-radius: 50%
+
+        @include desktop-low
+            height: 5rem
+            width: 5rem
+
+        @include mobile-ultra-small
+            height: 4rem
+            width: 4rem

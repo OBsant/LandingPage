@@ -1,0 +1,29 @@
+.footer
+    color: white
+    background-color: black
+
+    .itens
+        padding: 5rem
+        display: flex
+        justify-content: center
+        flex-direction: row
+        gap: 10rem
+
+        @include tablet
+            flex-direction: column
+            gap: 3rem
+
+        .more, .contact, .social
+            h3
+                margin-bottom: 1.5rem
+
+            p
+                padding-bottom: 0.5rem
+                cursor: pointer
+
+            .icon-container
+                display: flex
+                gap: .5rem
+                .icon
+                    font-size: 2.5rem
+                    cursor: pointer

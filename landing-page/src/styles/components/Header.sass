@@ -1,0 +1,52 @@
+@keyframes #{$animation}
+    0%
+        background-image: url($background)
+    25%
+        background-image: url($background-two)
+    50%
+        background-image: url($background-three)
+    75%
+        background-image: url($background-four)
+    100%
+        background-image: url($background)
+
+.header
+    height: 95vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    animation: #{$animation} $duration infinite
+    color: white
+
+    &-gradient
+        height: 100%
+        width: 100%
+        @include display
+        background: linear-gradient(rgba(0, 53, 84, .4), rgba(0, 53, 84, .4))
+
+        @include tablet
+            justify-content: center
+            align-items: center
+
+        .itens
+            margin-left: 10rem
+            width: 42rem
+            justify-content: start
+            @include tablet
+                margin-left: 3rem
+                margin-right: 3rem
+
+            h1
+                font-size: 80px
+
+                @include desktop-low
+                    font-size: 70px
+
+                @include mobile-small
+                    font-size: 50px
+
+            p
+                font-size: 25px
+
+                @include desktop-low
+                    font-size: 20px

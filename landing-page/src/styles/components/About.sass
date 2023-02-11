@@ -1,0 +1,133 @@
+.about-Container
+    margin-bottom: 8rem
+
+    @include tablet
+        @include display
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 2rem
+
+    @include gap-text
+        gap: 7rem
+        margin-bottom: 5rem
+
+    .cards
+        @include display
+        margin: 0rem 12rem 0rem 12rem
+
+        @include low-resolution
+            margin: 0rem 7rem 0rem 7rem
+
+        @include tablet
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            grid-gap: 50px
+            justify-content: center
+            align-items: center
+            width: 14rem
+
+        @include mobile-small
+            @include display
+            flex-direction: column
+            gap: 2rem
+
+        @include mobile-small
+            margin-top: 5rem
+
+        @include mobile-ultra-small
+            margin-top: -5rem
+
+    .about
+        height: 30rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 10rem
+        margin-bottom: 10rem
+
+        @include tablet
+            flex-direction: column
+
+        &-imgs
+            padding: 0rem 10rem 0rem 10rem
+
+            @include tablet
+                padding: 3rem 10rem 0rem 10rem
+
+            @include mobile
+                margin-bottom: -3rem
+
+            @include mobile-small
+                padding: 3rem 3rem 0rem 3rem
+
+            @include mobile-ultra-small
+                display: none
+
+            .back
+                width: 30rem
+
+                @include desktop-low
+                    width: 20rem
+
+                @include low-resolution
+                    margin-left: -5rem
+
+                @include gap-text
+                    margin-left: -3rem
+
+                @include mobile
+                    width: 13rem
+
+                @include mobile-small
+                    margin-left: -7rem
+
+            .front
+                width: 30rem
+                margin: 10rem 7rem 7rem 12rem
+                position: absolute
+
+                @include desktop-low
+                    width: 20rem
+                    margin: 7rem 7rem 7rem 9rem
+
+                @include low-resolution
+                    margin: 7rem 7rem 7rem 6rem
+
+                @include gap-text
+                    margin: 4rem 7rem 7rem 3rem
+
+                @include mobile
+                    width: 13rem
+
+                @include mobile-small
+                    margin: 4rem 7rem 7rem -1rem
+
+            img
+                border-radius: 5px
+
+        &-text
+            display: flex
+            flex-direction: column
+            gap: 1rem
+            padding: 5rem 10rem 0rem 10rem
+
+            @include desktop-low
+                padding: 5rem 10rem 0rem 0rem
+
+            @include low-resolution
+                padding: 5rem 5rem 0rem 0rem
+
+            @include tablet
+                padding: 1rem 5rem 1rem 5rem
+                margin-bottom: 1rem
+
+            @include mobile-ultra-small
+                padding: 1rem 2rem 1rem 2rem
+
+            h1
+                color: black
+
+                @include tablet
+                    text-align: center

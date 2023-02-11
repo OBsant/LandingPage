@@ -1,0 +1,25 @@
+.destinations-container
+    background-color: $backgroud-color
+    color: white
+    text-align: center
+
+    h1
+        padding-top: 4rem
+
+    .popular-destinations
+        display: flex
+        justify-content: space-between
+        margin: 5rem 10rem 0rem 10rem
+        padding-bottom: 5rem
+
+        @include desktop-low
+            gap: 3rem
+
+        @include low-resolution
+            margin: 5rem 5rem 0rem 5rem
+
+        @include tablet
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding-bottom: 4rem

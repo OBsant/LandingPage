@@ -1,0 +1,16 @@
+.review
+    text-align: center
+    margin: 5rem 10rem 5rem 10rem
+
+    @include low-resolution
+        margin: 5rem 5rem 5rem 5rem
+
+    .review-user
+        margin-top: 5rem
+        @include display
+
+        @include tablet
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            gap: 3rem
